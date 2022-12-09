@@ -192,7 +192,6 @@ i {
 
 /* Biography */
 .bios {
-  /* color: white; */
   margin: auto;
   position: absolute;
   top: 50%;
@@ -274,9 +273,7 @@ i {
 
 /* mobile phones with a maximum screen with of 660px */
 @media (min-width: 800px) {
-  .main{
-    top: 50%;
-  }
+  
   .container {
     column-count: 2;
     column-gap: 20px;
@@ -293,7 +290,23 @@ i {
   }
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 600px) { 
+  .dash-Content-Caption {
+    padding-top: 200px;
+  }
+  .bio{
+    padding-top: 200px;
+  }
+  .skills{
+    padding-top: 200px;    
+  }
+  
+  .projects{
+    padding-top: 200px;    
+  }
+}
+
+@media (max-width: 800px) {
   .container {
     column-count: 1;
     flex-direction: column;
