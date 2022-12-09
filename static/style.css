@@ -274,7 +274,9 @@ i {
 
 /* mobile phones with a maximum screen with of 660px */
 @media (min-width: 800px) {
-
+  .main{
+    top: 50%;
+  }
   .container {
     column-count: 2;
     column-gap: 20px;
