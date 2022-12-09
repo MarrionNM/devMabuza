@@ -267,29 +267,20 @@ i {
 }
 
 /* mobile phones with a maximum screen with of 660px */
-@media (min-width: 800px) {
-  .container {
-    column-count: 2;
-    column-gap: 20px;
-  }
-  .side-nav .home {
-    height: 10%;
-  }
-}
-
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .container {
     column-count: 1;
     flex-direction: column;
   }
-}
 
-@media (max-width: 600px) {
   .dash-Content-Caption {
     padding-top: 200px;
   }
   .bio {
     padding-top: 200px;
+  }
+  .bios{
+    padding-top: 80px;
   }
   .skills {
     padding-top: 200px;
@@ -335,7 +326,6 @@ i {
   .skill .info {
     font-size: 22px;
   }
-  
   .bar {
     border-radius: 20px;
   }
@@ -346,8 +336,6 @@ i {
     margin: 4px;
   }
 
-
-
   .projects .card .card-data a h3{
     font-size: 26px;
   }
@@ -356,13 +344,25 @@ i {
     width: 35px;
   }
 }
+/* 
+@media (max-width: 600px) {
+  
+} */
 
-@media (max-width: 770px) {
+/* @media (max-width: 770px) {
   .container {
     column-count: 1;
     flex-direction: column;
   }
   .side-nav .home {
     height: 10%;
+  } */
+/* } */
+
+@media (min-width: 768px) {
+  .container {
+    column-count: 2;
+    column-gap: 20px;
   }
+
 }
