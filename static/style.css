@@ -267,7 +267,7 @@ i {
 }
 
 /* mobile phones with a maximum screen with of 660px */
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .container {
     column-count: 1;
     flex-direction: column;
