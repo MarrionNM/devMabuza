@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="dash-Content dashboard">
+
+    <div class="dash-Content-Caption">
+        <img src="{{ ps.image.url }}" alt="Avatar">
+        <h2>{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
+        <P>{{ ps.profile_caption }}</P>
+    </div>
+
+    <div class="dash-Content-services">
+        <i class="fa-solid fa-envelope tooltip">
+            <span class="tooltiptext">77marrion@gmail.com</span>
+        </i>
+        <i class="fa-solid fa-phone tooltip">
+            <span class="tooltiptext">068-416-8106</span>
+        </i>
+        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+        <i class="fa-brands fa-facebook tooltip">
+            <span class="tooltiptext">Nkosinathi Mabuza</span>
+        </i>
+        <i class="fa-brands fa-github tooltip">
+            <span class="tooltiptext">MarrionNM</span>
+        </i>
+        <i class="fa-brands fa-linkedin tooltip">
+            <span class="tooltiptext">Nkosinathi Mabuza</span>
+        </i>
+    </div>
+</div>
+
+
+{% endblock body %}

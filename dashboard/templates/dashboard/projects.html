@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="dash-Content">
+  <h3>Projects</h3>
+  <div class="container projects">
+    {% for project in proj %}
+    <div class="card">
+      <div class="card-imgs">
+        <img src="{{project.image.url}}" alt="" />
+      </div>
+
+      <div class="card-data">
+        <a href="{{project.link}}" target="blank"><h3>{{project.title}}</h3></a>
+        <p>{{project.description}}</p>
+      </div>
+      <div class="card-tags">
+        {% for tag in project.tags.all %}
+        <img src="{{tag}}" alt="" />
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <br/>
+</div>
+{% endblock body %}

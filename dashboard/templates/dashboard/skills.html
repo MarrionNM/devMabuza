@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block body %}
+
+<div class="dash-Content skills">
+  {% block scripts %}
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+
+  {% endblock scripts %}
+
+  <h3>Skills</h3>
+
+  <div>
+    <!-- <div class="skills-tags">
+      {% for skill in skills %}
+      <img src="{{skill}}" alt="p" />
+      {% endfor %}
+    </div> -->
+
+    <div class="skills-container">
+      {% for skill in skills %}
+      <div class="skill">
+        <div class="info">
+          <span>{{skill.skill}}</span>
+          <span>{{skill.rate}}%</span>
+        </div>
+        <div class="bar">
+          <div class="barfill" style="width: {{skill.rate}}%;"></div>
+        </div>
+      </div>
+      {% endfor %}
+      <br/>
+    </div>
+
+  </div>
+  {% endblock body %}
+</div>

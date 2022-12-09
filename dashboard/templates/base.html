@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Nkosinathi Mabuza</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link
+      href="{% static 'fontawesomefree/css/all.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="root">
+    <div class="side-nav">
+      <a href="{% url 'profile:profile' %}">
+        <div class="grp home">
+          <i class="fa-solid fa-home fa-lg"></i>
+        </div>
+      </a>
+      <a href="{% url 'profile:biography' %}">
+        <div class="grp">
+          <i class="fa-solid fa-circle-info fa-lg"></i>
+        </div>
+      </a>
+      <a href="{% url 'profile:skills' %}">
+        <div class="grp">
+          <i class="fa-solid fa-chart-simple fa-lg"></i>
+        </div>
+      </a>
+      <a href="{% url 'profile:projects' %}">
+        <div class="grp">
+          <i class="fa-solid fa-clipboard-list fa-lg"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="main">{% block body %} {% endblock body %}</div>
+  </body>
+</html>
