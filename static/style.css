@@ -269,6 +269,7 @@ i {
 /* mobile phones with a maximum screen with of 660px */
 @media (max-width: 460px) {
   .container {
+    margin-top: 50px;
     column-count: 1;
     flex-direction: column;
   }
@@ -361,6 +362,7 @@ i {
 
 @media (min-width: 768px) {
   .container {
+    margin-top: 50px;
     column-count: 2;
     column-gap: 20px;
   }
