@@ -13,7 +13,10 @@ urlpatterns = [
     # url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 
     path('admin/', admin.site.urls),
-    path('', include("dashboard.urls", namespace='dashboard'))
+    path('', include("dashboard.urls", namespace='dashboard')),
+
+    # path("__reload__/", include("django_browser_reload.urls")),
+
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
