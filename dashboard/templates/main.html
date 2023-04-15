@@ -1,0 +1,74 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<div class="">
+  <div class="">
+    <img src="{{ ps.image.url }}" alt="Avatar" />
+    <h2>{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
+    <p>{{ ps.profile_caption }}</p>
+  </div>
+
+  <div class="">
+    <i class="fa-solid fa-envelope">
+      <span class="tooltiptext">77marrion@gmail.com</span>
+    </i>
+    <i class="fa-solid fa-phone">
+      <span class="tooltiptext">068-416-8106</span>
+    </i>
+    <i class="fa-brands fa-facebook">
+      <span class="tooltiptext">Nkosinathi Mabuza</span>
+    </i>
+    <i class="fa-brands fa-github">
+      <span class="tooltiptext">MarrionNM</span>
+    </i>
+    <i class="fa-brands fa-linkedin">
+      <span class="tooltiptext">Nkosinathi Mabuza</span>
+    </i>
+  </div>
+</div>
+
+<div class="">
+  <h2>Hi, I'm <span class="hint"> Nkosinathi. </span></h2>
+
+  <p>
+    ~ I'm a <span class="hint">Full-Stack</span> self - tought
+    <span class="hint">Developer</span>
+  </p>
+
+  <p>
+    ~ Artificial Inteligence <span class="hint">AI/ML</span> and Internet Of
+    Things <span class="hint">IOT</span> is amoung my favourit within the tech
+    indeustry.
+  </p>
+
+  <p>
+    ~ I am the the founder of <span class="hint">Simply Marrions.</span> A tech
+    company aiming to building solutions that simplyfies our day to day lives.
+  </p>
+
+  <p>
+    ~ Among my hobbies I am a <span class="hint">musician.</span> I play
+    electric guitar, bass guitar and the piano.
+  </p>
+  <p>~ I love watching <span class="hint">SUB</span> anime</p>
+</div>
+
+<div class="container">
+  {% for project in proj %}
+  <div class="card">
+    <div class="card-imgs">
+      <img src="{{project.image.url}}" alt="" />
+    </div>
+
+    <div class="card-data">
+      <a href="{{project.link}}" target="blank"><h3>{{project.title}}</h3></a>
+      <p>{{project.description}}</p>
+    </div>
+    <div class="card-tags">
+      {% for tag in project.tags.all %}
+      <img src="{{tag}}" alt="" />
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock body %}

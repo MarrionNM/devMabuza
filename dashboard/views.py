@@ -2,6 +2,14 @@ from django.shortcuts import render
 from .models import Person, Project, Tag, Information, Skill
 
 # Create your views here.
+def main(response):
+    person = Person.objects.get(id='01')
+    infomation = Information.objects.get(id='1')
+    projects = Project.objects.all()
+
+    context = {'ps': person, 'infomation': infomation, 'proj': projects}
+    return render(response, "main.html", context)
+
 def profile(response):
     person = Person.objects.get(id='01')
     context = {'ps': person}
