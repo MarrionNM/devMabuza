@@ -78,17 +78,14 @@
           <p class="text-3xl pt-2">{{project.description}}</p>
         </div>
 
-        <div class="flex justify-between">
+        <div class="flex justify-between px-20">
           <div class="flex items-center gap-5">
             {% for tag in project.tags.all %}
             <img src="{{tag}}" alt="" />
             {% endfor %}
           </div>
-          <button
-            class="w-[150px] text-xl hover:bg-sky-700 border-2 border-teal-400"
-          >
-            View Code
-          </button>
+          <button class="w-[150px] text-xl hover:bg-sky-700 border-2 border-teal-400" 
+            onclick=" window.open('{{project.link}}','_blank')">View</button>
         </div>
       </div>
       {% endfor %}
