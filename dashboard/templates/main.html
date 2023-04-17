@@ -5,62 +5,62 @@
     class="grid grid-row-2 place-items-center mb-20 pb-5 m-20 lg:grid-rows-1 lg:grid-cols-2"
   >
     <div class="grid grid-row-3 place-items-center mb-10 gap-5">
-      <img class="h-[800px]" src="{{ ps.image.url }}" alt="Avatar" />
-      <h2 class="text-6xl">
+      <img class="h-[600px]" src="{{ ps.image.url }}" alt="Avatar" />
+      <h2 class="text-4xl">
         {{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}
       </h2>
-      <p class="text-4xl">{{ ps.profile_caption }}</p>
+      <p class="text-2xl">{{ ps.profile_caption }}</p>
     </div>
 
     <div class="grid grid-cols-2 gap-5 place-items-center">
-      <i class="fa-solid fa-envelope text-2xl text-teal-400">
+      <i class="fa-solid fa-envelope text-2l text-teal-400">
         <span class="text-xl tracking-widest">77marrion@gmail.com</span>
       </i>
-      <i class="fa-solid fa-phone text-2xl text-teal-400">
+      <i class="fa-solid fa-phone text-xl text-teal-400">
         <span class="text-xl tracking-widest">068-416-8106</span>
       </i>
-      <i class="fa-brands fa-github text-2xl text-teal-400">
+      <i class="fa-brands fa-github text-xl text-teal-400">
         <span class="text-xl tracking-widest">MarrionNM</span>
       </i>
-      <i class="fa-brands fa-linkedin text-2xl text-teal-400">
+      <i class="fa-brands fa-linkedin text-xl text-teal-400">
         <span class="text-xl tracking-widest">Nkosinathi Mabuza</span>
       </i>
     </div>
   </div>
 
   <div class="text-lg gap-10 m-20">
-    <h2 class="text-4xl mb-5">
+    <h2 class="text-2xl mb-5">
       Hi, how can <span class="text-teal-400">I help You</span>.
     </h2>
 
-    <p class="text-2xl">
+    <p class="text-xl">
       ~ I'm a <span class="text-teal-400">Full-Stack</span> self - tought
       <span class="text-teal-400">Developer</span>.
     </p>
 
-    <p class="text-2xl">
+    <p class="text-xl">
       ~ Artificial Inteligence <span class="text-teal-400">AI/ML</span> and
       Internet Of Things <span class="text-teal-400">IOT</span> is amoung my
       favourit within the tech indeustry.
     </p>
 
-    <p class="text-2xl">
+    <p class="text-xl">
       ~ I am the the founder of
       <span class="text-teal-400">Simply Marrions.</span> A tech company aiming
       to building solutions that simplyfies our day to day lives.
     </p>
 
-    <p class="text-2xl">
+    <p class="text-xl">
       ~ Among my hobbies I am a <span class="text-teal-400">musician.</span> I
       play electric guitar, bass guitar and the piano.
     </p>
-    <p class="text-2xl">
+    <p class="text-xl">
       ~ I love watching <span class="text-teal-400">SUB</span> anime
     </p>
   </div>
 
   <div class="m-20">
-    <h2 class="text-6xl px-4 py-5">View my work</h2>
+    <h2 class="text-4xl px-4 py-5">View my work</h2>
     <div class="lg:grid lg:grid-cols-2">
       {% for project in proj %}
       <div class="mb-20 gap-5 lg:m-10">
@@ -70,12 +70,12 @@
 
         <div class="mb-2 px-2 lg:mb-5">
           <a
-            class="text-5xl text-teal-400"
+            class="text-2xl text-teal-400"
             href="{{project.link}}"
             target="blank"
             ><h3>{{project.title}}</h3></a
           >
-          <p class="text-3xl pt-2">{{project.description}}</p>
+          <p class="text-xl pt-2">{{project.description}}</p>
         </div>
 
         <div class="flex justify-between px-10">
@@ -84,7 +84,7 @@
             <img src="{{tag}}" alt="" />
             {% endfor %}
           </div>
-          <button class="w-[150px] text-xl hover:bg-sky-700 border-2 border-teal-400" 
+          <button class="w-[150px] text-lg hover:bg-sky-700 border-2 border-teal-400" 
             onclick=" window.open('{{project.link}}','_blank')">View</button>
         </div>
       </div>
