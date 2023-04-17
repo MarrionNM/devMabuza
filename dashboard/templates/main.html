@@ -6,59 +6,59 @@
     
     <div class="grid grid-row-3 place-items-center mb-10 gap-5">
       <img class="h-[500px]" src="{{ ps.image.url }}" alt="Avatar" />
-      <h2 class="sm:text-6xl lg:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
-      <p class="sm:text-4xl text-2xl">{{ ps.profile_caption }}</p>
+      <h2 class="text-6xl lg:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
+      <p class="text-4xl text-2xl">{{ ps.profile_caption }}</p>
     </div>
 
     <div class="grid grid-cols-2 gap-5 place-items-center">
       <i class="fa-solid fa-envelope text-2l text-teal-400">
-        <span class="sm:text-xl text-lg tracking-widest">77marrion@gmail.com</span>
+        <span class="text-xl text-lg tracking-widest">77marrion@gmail.com</span>
       </i>
       <i class="fa-solid fa-phone text-xl text-teal-400">
-        <span class="sm:text-xl text-lg tracking-widest">068-416-8106</span>
+        <span class="text-xl text-lg tracking-widest">068-416-8106</span>
       </i>
       <i class="fa-brands fa-github text-xl text-teal-400">
-        <span class="sm:text-xl text-lg tracking-widest">MarrionNM</span>
+        <span class="text-xl text-lg tracking-widest">MarrionNM</span>
       </i>
       <i class="fa-brands fa-linkedin text-xl text-teal-400">
-        <span class="sm:text-xl text-lg tracking-widest">Nkosinathi Mabuza</span>
+        <span class="text-xl text-lg tracking-widest">Nkosinathi Mabuza</span>
       </i>
     </div>
   </div>
 
   <div class="sm:text-xl text-lg gap-10 m-20">
-    <h2 class="sm:text-4xl text-2xl mb-5">
+    <h2 class="text-4xl lg:text-2xl mb-5">
       Hi, how can <span class="text-teal-400">I help You</span>.
     </h2>
 
-    <p class="sm:text-2xl text-xl mb-2">
+    <p class="text-2xl lg:text-xl mb-2">
       ~ I'm a <span class="text-teal-400">Full-Stack</span> self - tought
       <span class="text-teal-400">Developer</span>.
     </p>
 
-    <p class="sm:text-2xl text-xl mb-2">
+    <p class="text-2xl lg:text-xl mb-2">
       ~ Artificial Inteligence <span class="text-teal-400">AI/ML</span> and
       Internet Of Things <span class="text-teal-400">IOT</span> is amoung my
       favourit within the tech indeustry.
     </p>
 
-    <p class="sm:text-2xl text-xl mb-2">
+    <p class="text-2xl lg:text-xl mb-2">
       ~ I am the the founder of
       <span class="text-teal-400">Simply Marrions.</span> A tech company aiming
       to building solutions that simplyfies our day to day lives.
     </p>
 
-    <p class="sm:text-2xl text-xl mb-2">
+    <p class="text-2xl lg:text-xl mb-2">
       ~ Among my hobbies I am a <span class="text-teal-400">musician.</span> I
       play electric guitar, bass guitar and the piano.
     </p>
-    <p class="sm:text-2xl text-xl mb-2">
+    <p class="text-2xl lg:text-xl mb-2">
       ~ I love watching <span class="text-teal-400">SUB</span> anime
     </p>
   </div>
 
   <div class="m-20">
-    <h2 class="sm:text-6xl text-4xl p-4">View my work</h2>
+    <h2 class="text-6xl lg:text-4xl p-4">View my work</h2>
 
     <div class="lg:grid lg:grid-cols-2">
       {% for project in proj %}
@@ -69,11 +69,11 @@
         </div>
 
         <div class="mb-2 px-2 lg:mb-5">
-          <a class="sm:text-4xl text-2xl text-teal-400" href="{{project.link}}" target="blank">
+          <a class="text-4xl lg:text-2xl text-teal-400" href="{{project.link}}" target="blank">
             <h3>{{project.title}}</h3>
           </a>
 
-          <p class="sm:text-2xl text-xl pt-2">{{project.description}}</p>
+          <p class="text-2xl lg:text-xl pt-2">{{project.description}}</p>
         </div>
 
         <div class="flex justify-between px-10">
@@ -82,7 +82,7 @@
             <img class="h-[40px] w-[40px]" src="{{tag}}" alt="" />
             {% endfor %}
           </div>
-          <button class="w-[80px] text-lg hover:bg-sky-700 border-2 border-teal-400" 
+          <button class="w-[150px] text-lg hover:bg-sky-700 border-2 border-teal-400" 
             onclick=" window.open('{{project.link}}','_blank')">View</button>
         </div>
       </div>
