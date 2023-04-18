@@ -792,6 +792,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-teal-400 {
     --tw-text-opacity: 1;
     color: rgb(45 212 191 / var(--tw-text-opacity));
@@ -845,6 +850,11 @@ body {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-teal-400 {
@@ -915,6 +925,11 @@ body {
   .\32xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .\32xl\:text-teal-400 {
