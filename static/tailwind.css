@@ -832,6 +832,10 @@ body {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
+  .lg\:p-5 {
+    padding: 1.25rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
