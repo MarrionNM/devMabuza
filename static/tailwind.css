@@ -586,8 +586,12 @@ video {
   display: grid;
 }
 
-.h-\[800px\] {
-  height: 800px;
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .max-h-\[600px\] {
@@ -596,6 +600,10 @@ video {
 
 .w-\[150px\] {
   width: 150px;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .grid-cols-2 {
@@ -635,24 +643,18 @@ video {
   border-color: rgb(45 212 191 / var(--tw-border-opacity));
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pb-5 {
@@ -668,24 +670,13 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-\[100px\] {
+  font-size: 100px;
 }
 
 .text-lg {
@@ -696,6 +687,28 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[140px\] {
+  font-size: 140px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .tracking-widest {
@@ -720,6 +733,71 @@ body {
   background-color: rgb(3 105 161 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:h-\[40px\] {
+    height: 40px;
+  }
+
+  .sm\:w-\[40px\] {
+    width: 40px;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:h-\[20px\] {
+    height: 20px;
+  }
+
+  .md\:w-\[20px\] {
+    width: 20px;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-teal-400 {
+    --tw-text-opacity: 1;
+    color: rgb(45 212 191 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:m-10 {
     margin: 2.5rem;
@@ -733,11 +811,114 @@ body {
     display: grid;
   }
 
+  .lg\:h-\[20px\] {
+    height: 20px;
+  }
+
+  .lg\:w-\[20px\] {
+    width: 20px;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-teal-400 {
+    --tw-text-opacity: 1;
+    color: rgb(45 212 191 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[20px\] {
+    height: 20px;
+  }
+
+  .xl\:w-\[20px\] {
+    width: 20px;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:h-\[40px\] {
+    height: 40px;
+  }
+
+  .\32xl\:w-\[40px\] {
+    width: 40px;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-teal-400 {
+    --tw-text-opacity: 1;
+    color: rgb(45 212 191 / var(--tw-text-opacity));
   }
 }
