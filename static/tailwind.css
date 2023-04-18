@@ -808,6 +808,10 @@ body {
     margin: 2.5rem;
   }
 
+  .lg\:m-5 {
+    margin: 1.25rem;
+  }
+
   .lg\:mb-5 {
     margin-bottom: 1.25rem;
   }
