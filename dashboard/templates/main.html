@@ -13,7 +13,7 @@
       <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
       <p class="text-2xl md:text-xl lg:text-xl 2xl:text-2xl">{{ ps.profile_caption }}</p>
 
-      <div class="grid grid-cols-2 gap-5 lg:gap-4 place-items-center lg:place-items-start text-lg md:text-md lg:text-base 2xl:text-lg tracking-widest text-teal-400 lg:p-5">
+      <div class="grid grid-cols-2 gap-5 lg:gap-4 place-items-center lg:place-items-start text-lg md:text-md lg:text-base 2xl:text-lg tracking-widest text-teal-400">
        <i class="fa-solid fa-envelope">
         <span>77marrion@gmail.com</span>
        </i>
@@ -69,7 +69,7 @@
 
     <div class="lg:grid lg-gap-10 lg:grid-cols-2">
       {% for project in proj %}
-      <div class="mb-20 gap-5 lg-mb-0 lg:m-5">
+      <div class="mb-20 gap-5 lg:ml-2 lg:mr-2">
 
         <div class="mb-2">
           <img class="max-h-[600px] justify-center items-center" src="{{project.image.url}}" alt="" />
