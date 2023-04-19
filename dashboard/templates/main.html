@@ -4,26 +4,32 @@
 
   <div class="grid grid-row-2 place-items-center mb-20 pb-5 m-20 lg:grid-rows-1 lg:grid-cols-2">
     
-    <div class="grid grid-row-3 place-items-center mb-10 gap-5">
-      <img class="h-[500px] md:h-[300px] lg:h-[300px] 2xl:h-[500px]" src="{{ ps.image.url }}" alt="Avatar" />
-      <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
-      <p class="text-2xl md:text-xl lg:text-xl 2xl:text-2xl">{{ ps.profile_caption }}</p>
+    <div>
+      <img class="h-[512px] md:h-[512px] lg:h-[5120px] 2xl:h-[512px]" src="{{ ps.image.url }}" alt="Avatar" />
     </div>
 
-    <div class="grid grid-cols-2 gap-5 place-items-center text-lg md:text-md lg:text-md 2xl:text-lg tracking-widest text-teal-400">
-      <i class="fa-solid fa-envelope">
+    <div class="lg:grid lg:grid-row-2 place-items-center lg:gap-5 justify-center items-center mt-5 lg-mt-0">
+     
+      <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
+      <p class="text-2xl md:text-xl lg:text-xl 2xl:text-2xl">{{ ps.profile_caption }}</p>
+
+      <div class="grid grid-cols-2 gap-5 place-items-center text-lg md:text-md lg:text-base 2xl:text-lg tracking-widest text-teal-400 lg:p-5">
+       <i class="fa-solid fa-envelope">
         <span>77marrion@gmail.com</span>
-      </i>
-      <i class="fa-solid fa-phone">
+       </i>
+       <i class="fa-solid fa-phone">
         <span>068-416-8106</span>
-      </i>
-      <i class="fa-brands fa-github">
+       </i>
+       <i class="fa-brands fa-github">
         <span>MarrionNM</span>
-      </i>
-      <i class="fa-brands fa-linkedin">
+       </i>
+       <i class="fa-brands fa-linkedin">
         <span>Nkosinathi Mabuza</span>
-      </i>
+       </i>
+      </div>
+
     </div>
+
   </div>
 
   <div class="gap-10 m-20 text-xl md:text-lg lg:text-lg 2xl:text-2xl">
