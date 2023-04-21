@@ -13,11 +13,11 @@
       <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
       <p class="text-2xl md:text-xl lg:text-xl 2xl:text-2xl">{{ ps.profile_caption }}</p>
 
-      <div class="grid grid-cols-2 gap-5 lg:gap-2 place-items-center text-lg md:text-md lg:text-md 2xl:text-lg tracking-widest text-teal-400">
-       <i class="fa-solid fa-envelope"></i>
-       <i class="fa-solid fa-phone"></i>
-       <i class="fa-brands fa-github"></i>
-       <i class="fa-brands fa-linkedin"></i>
+      <div class="grid grid-cols-2 lg:grid-cols-1 gap-5 lg:gap-2 place-items-center text-lg md:text-md lg:text-md 2xl:text-lg tracking-widest text-teal-400">
+       <i class="fa-solid fa-envelope"><span>77marrion@gmail.com</span></i>
+       <i class="fa-solid fa-phone"><span>068-416-8106</span></i>
+       <i class="fa-brands fa-github"><span>MarrionNM</span></i>
+       <i class="fa-brands fa-linkedin"><span>Nkosinathi Mabuza</span></i>
       </div>
 
 <!-- <span>77marrion@gmail.com</span>
@@ -64,7 +64,7 @@
   <div class="m-20">
     <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl p-4">View my work</h2>
 
-    <div class="lg:grid lg:grid-cols-2 lg-gap-2">
+    <div class="lg:grid lg-gap-2">
       {% for project in proj %}
       <div class="mb-20 gap-5 lg:ml-10 lg:mr-10">
 
