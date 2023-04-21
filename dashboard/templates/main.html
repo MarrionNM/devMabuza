@@ -2,18 +2,18 @@
 
 <div class="">
 
-  <div class="grid grid-row-2 place-items-center mb-20 pb-5 m-20 lg:grid-rows-1 lg:grid-cols-2">
+  <div class="grid grid-row-2 place-items-center gap-5 mb-20 pb-5 m-20 lg:grid-rows-1 lg:grid-cols-2">
     
     <div>
       <img class="h-[512px] md:h-[512px] lg:h-[5120px] 2xl:h-[512px]" src="{{ ps.image.url }}" alt="Avatar" />
     </div>
 
-    <div class="lg:grid lg:grid-row-2 place-items-center lg:gap-5 justify-center items-center my-5 lg-mt-0">
+    <div class="lg:grid lg:grid-row-2 place-items-center gap-5 justify-center items-center my-5 lg-mt-0">
      
-      <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
-      <p class="text-2xl md:text-xl lg:text-xl 2xl:text-2xl">{{ ps.profile_caption }}</p>
+      <h2 class="text-6xl md:text-2xl lg:text-2xl 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
+      <p class="text-4xl md:text-xl lg:text-xl 2xl:text-2xl">{{ ps.profile_caption }}</p>
 
-      <div class="grid grid-cols-2 lg:grid-cols-1 gap-5 lg:gap-2 place-items-center my-2 text-lg md:text-md lg:text-md 2xl:text-lg tracking-widest text-teal-400">
+      <div class="grid grid-cols-2 lg:grid-cols-1 gap-5 lg:gap-2 place-items-center my-2 text-2xl md:text-md lg:text-md 2xl:text-lg tracking-widest text-teal-400">
        <i class="fa-solid fa-envelope"><span>77marrion@gmail.com</span></i>
        <i class="fa-solid fa-phone"><span>068-416-8106</span></i>
        <i class="fa-brands fa-github"><span>MarrionNM</span></i>
@@ -29,9 +29,9 @@
 
   </div>
 
-  <div class="gap-10 m-20 text-xl md:text-lg lg:text-lg 2xl:text-2xl">
+  <div class="gap-10 m-20 text-2xl md:text-lg lg:text-lg 2xl:text-2xl">
 
-    <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl mb-5">
+    <h2 class="text-6xl md:text-2xl lg:text-2xl 2xl:text-4xl mb-5">
       Hi, how can <span class="text-teal-400">I help You</span>.
     </h2>
 
@@ -61,8 +61,8 @@
     </p>
   </div>
 
-  <div class="m-20">
-    <h2 class="text-4xl md:text-2xl lg:text-2xl 2xl:text-4xl p-4">View my work</h2>
+  <div class="m-20 gap-5">
+    <h2 class="text-6xl md:text-2xl lg:text-2xl 2xl:text-4xl p-4">View my work</h2>
 
     <div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
       {% for project in proj %}
