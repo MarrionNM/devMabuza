@@ -5,7 +5,7 @@ from .models import Person, Project, Tag, Information, Skill
 def main(response):
     person = Person.objects.get(id='01')
     infomation = Information.objects.get(id='1')
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('id').values()
 
     context = {'ps': person, 'infomation': infomation, 'proj': projects}
     return render(response, "main.html", context)
