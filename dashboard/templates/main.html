@@ -65,11 +65,11 @@
   </div>
 
   <div class="m-20 gap-5">
-    <h2 class="text-6xl md:text-2xl lg:text-2xl 2xl:text-4xl p-5">View my work</h2>
+    <h2 class="mb-5 text-6xl md:text-2xl lg:text-2xl 2xl:text-4xl p-5">View my work</h2>
 
     <div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
       {% for project in proj %}
-      <div class="mb-10 mx-5 gap-5 px-10">
+      <div class="my-10 md:my-5 lg:my-0 lg:mx-5 gap-5 px-10">
 
         <div class="mb-2 max-w-fit">
           <img class="max-h-[600px] justify-center items-center" src="{{project.image.url}}" alt="" />
@@ -86,7 +86,7 @@
         <div class="flex justify-between px-10">
           <div class="flex items-center gap-5">
             {% for tag in project.tags.all %}
-              <img class="h-[40px] w-[40px] md:h-[20px] md:w-[20px] lg:h-[20px] lg:w-[20px]  xl:h-[10px] xl:w-[10px] 2xl:h-[40px] 2xl:w-[40px]" src="{{tag}}" alt="" />
+              <img class="h-[20px] w-[20px] md:h-[20px] md:w-[20px] lg:h-[20px] lg:w-[20px] xl:h-[10px] xl:w-[10px] 2xl:h-[40px] 2xl:w-[40px]" src="{{tag}}" alt="" />
             {% endfor %}
           </div>
           <button class="w-[150px] text-lg md:text-md lg:text-md 2xl:text-lg hover:bg-sky-700 border-2 border-teal-400" 
