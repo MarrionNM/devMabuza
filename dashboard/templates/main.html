@@ -13,28 +13,24 @@
       <h2 class="text-6xl md:text-2xl lg:text-md 2xl:text-4xl">{{ ps.name }} {{ ps.middle_name }} {{ ps.surname }}</h2>
       <p class="text-4xl md:text-xl lg:text-xl 2xl:text-2xl lg:mt-5 justify-center items-center">{{ ps.profile_caption }}</p>
 
-      <div class="grid grid-cols-2 gap-5 text-xl md:text-md lg:text-xl 2xl:text-md tracking-widest text-teal-400 lg:mt-5">
+      <div class="grid grid-cols-1 gap-5 text-2xl md:text-lg lg:text-2xl 2xl:text-md tracking-widest text-teal-400 lg:mt-5">
         <a href="mailto:77marrion@gmail.com" target="blank">
           <i class="fa-solid fa-envelope">
-            <span>77marrion@gmail.com</span>
           </i>
         </a>
         
         <a href="tel:+27684168106" target="blank">
           <i class="fa-solid fa-phone">
-            <span>068-416-8106</span>
           </i>
         </a>
         
         <a href="https://github.com/MarrionNM" target="blank">
           <i class="fa-brands fa-github">
-            <span>MarrionNM</span>
           </i>
         </a>
         
         <a href="https://www.linkedin.com/in/nkosinathi-mabuza-54629a1a9/" target="blank">
           <i class="fa-brands fa-linkedin">
-            <span>Nkosinathi Mabuza</span>
           </i>
         </a>
       </div>
@@ -95,9 +91,9 @@
   <div class="m-20 gap-5">
     <h2 class="mb-5 text-6xl md:text-2xl lg:text-2xl 2xl:text-4xl p-5">View my work</h2>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div class="grid grid-cols-1 lg:grid-cols-2 m-10 p-10">
       {% for project in proj %}
-      <div class="m-10 p-10">
+      <div class="">
 
         <div class="mb-2 max-w-fit">
           <img class="max-h-[600px] justify-center items-center" src="{{project.image.url}}" alt="" />
