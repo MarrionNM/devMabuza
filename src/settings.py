@@ -25,8 +25,8 @@ with open(os.path.join(BASE_DIR, 'src/secrets.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = ['.vercel.app']
+DEBUG = False
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
